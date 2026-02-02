@@ -1,5 +1,7 @@
 #!/bin/bash
 
-for i in {1..11}; do
-    echo $i
+for i in {1..29}; do
+    echo "$i yes"
 done
+echo "30 no"
+echo "31 yes"
