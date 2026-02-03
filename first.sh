@@ -1,7 +1,9 @@
 #!/bin/bash
-
-for i in {1..29}; do
-    echo "$i yes"
+readonly FILE_PATH="/home/venera/templates"
+for FILE in "$FILE_PATH"/*; do
+  if [[ -d "$FILE" ]]; then
+    echo "Directory: $(basename "$FILE")"
+    elif [[ -f "$FILE" ]]; then
+    echo "File: $(basename "$FILE")"
+    fi
 done
-echo "30 no"
-echo "31 yes"
