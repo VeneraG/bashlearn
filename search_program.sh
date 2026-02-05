@@ -38,9 +38,9 @@ fi
 
 check_command_in_path "$1"
 case $? in
-    0) echo "Command '$1' found in PATH." ;;
-    2) echo "Command '$1' not found or not executable." ;;
-    1) echo "Command '$1' not found." ;;
+    0) echo "Command '$1' found in PATH" ;;
+    2) echo "Command '$1' not found or not executable" ;;
+    1) echo "Command '$1' not found" ;;
 esac
 
 exit 0  
